@@ -67,14 +67,16 @@
                 android:inputType="textPersonName"
                 android:padding="5dp"
                 android:paddingTop="25dp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="263dp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="50dp"
             android:layout_marginRight="15dp"
             android:layout_weight="0"
             android:orientation="horizontal">
@@ -91,8 +93,8 @@
                 android:ems="10"
                 android:enabled="false"
                 android:inputType="textPersonName"
-                android:text="E"
                 android:textAlignment="center"
+                android:textColor="#000000"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:visibility="visible" />
@@ -108,8 +110,8 @@
                 android:ems="10"
                 android:enabled="false"
                 android:inputType="textPersonName"
-                android:text="T"
                 android:textAlignment="center"
+                android:textColor="#000000"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -124,8 +126,8 @@
                 android:ems="10"
                 android:enabled="false"
                 android:inputType="textPersonName"
-                android:text="P"
                 android:textAlignment="center"
+                android:textColor="#000000"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -140,10 +142,67 @@
                 android:ems="10"
                 android:enabled="false"
                 android:inputType="textPersonName"
-                android:text="S"
                 android:textAlignment="center"
+                android:textColor="#000000"
                 android:textSize="20sp"
                 android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center">
+
+                <Button
+                    android:id="@+id/btnVerify"
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="50dp"
+                    android:maxWidth="50dp"
+                    android:minWidth="50dp"
+                    android:text="VERIFICAR"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:rippleColor="#575757"
+                    tools:layout_editor_absoluteY="4dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center">
+
+                <Button
+                    android:id="@+id/btnClean"
+                    android:layout_width="165dp"
+                    android:layout_height="49dp"
+                    android:layout_weight="1"
+                    android:text="LIMPIAR"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="16dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
         </LinearLayout>
 
     </LinearLayout>
